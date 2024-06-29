@@ -61,9 +61,15 @@ Add the extracted directory to your system's PATH environment variable to access
    ```
 
 5. **Verify the Restoration:**
+
 Open MongoDB Compass:
+
 Launch MongoDB Compass on your local machine.
+
 Connect to Your Local MongoDB Instance:
+
 In MongoDB Compass, click on the "Connect" button to connect to your local MongoDB instance. The default connection string is usually mongodb://localhost:27017.
+
 Check the database:
+
 Go to the application_db database and check that the collections are created with the data inside.
