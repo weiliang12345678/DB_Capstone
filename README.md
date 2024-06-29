@@ -40,7 +40,7 @@ Add the extracted directory to your system's PATH environment variable to access
 ### Detailed Steps with Example:
 
 1. **Install MongoDB:**
-   - Ensure MongoDB is installed on the local machine. Instructions for installation can be found on the [MongoDB installation guide](https://docs.mongodb.com/manual/installation/). Can watch this video to see how to install: https://www.youtube.com/watch?v=OiMOQr457Qs
+   - Ensure MongoDB is installed on the local machine. Instructions for installation can be found on the [MongoDB installation guide](https://docs.mongodb.com/manual/installation/). Can watch this video until 5.45min to see how to install: https://www.youtube.com/watch?v=OiMOQr457Qs
 
 2. **Clone the Repository:**
    ```bash
