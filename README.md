@@ -30,6 +30,12 @@ To restore a MongoDB database locally from a dump file, you can use the `mongore
    ```bash
    mongorestore --db application_db dump/application_db
    ```
+If you do not have the MongoDB tools installed, you can download them separately from the MongoDB website. Here’s how you can install the MongoDB tools, including mongorestore:
+For Windows:
+Go to the [MongoDB Download Center](https://www.mongodb.com/try/download/database-tools#:~:text=MongoDB%20Command%20Line%20Database%20Tools%20Download).
+Select your version and platform.
+Download the ZIP file and extract it.
+Add the extracted directory to your system's PATH environment variable to access the tools from any command prompt.
 
 ### Detailed Steps with Example:
 
