@@ -1,24 +1,54 @@
-1. **Download the Repository:**
-   - Your teammate should clone the GitHub repository where you have uploaded the MongoDB dump files (`application_db`).
+## How to Restore the `application_db` MongoDB Database Locally
 
-2. **Install MongoDB:**
-   - Ensure MongoDB is installed and running on their local machine. They can download MongoDB from the [official MongoDB website](https://www.mongodb.com/try/download/community).
+### Prerequisites
+- Ensure MongoDB and MongoDB Compass are installed on your local machine. You can download and install them from the [MongoDB Download Center](https://www.mongodb.com/try/download/community).
+- YouTube video of how to download, watch until 5.00 min (https://www.youtube.com/watch?v=gB6WLkSrtJk)
 
-3. **Restore the MongoDB Dump:**
+### Steps to Restore the Database
+
+1. **Clone the Repository:**
    - Open a terminal or command prompt.
-   - Navigate to the directory where the MongoDB dump files (`application_db`) are located (the directory where they cloned the GitHub repository).
-   - Use the `mongorestore` command to import the database dump into their local MongoDB instance:
+   - Clone this GitHub repository to your local machine by running the following command:
+     ```bash
+     git clone <repository_url>
+     cd <repository_name>
      ```
-     mongorestore --db application_db /path/to/dump/directory/application_db
+     Replace `<repository_url>` with the actual URL of the GitHub repository and `<repository_name>` with the name of the repository.
+
+2. **Navigate to the Dump Directory:**
+   - Change to the directory where the MongoDB dump files are located:
+     ```bash
+     cd application_db
      ```
-     - Replace `/path/to/dump/directory` with the actual path where the `application_db` dump directory is located within the cloned repository.
 
-4. **Verify Database Import:**
-   - Once `mongorestore` completes, verify that the `application_db` database has been imported successfully into their local MongoDB instance.
+3. **Restore the MongoDB Database Using MongoDB Compass:**
+   - Ensure MongoDB is running on your local machine. 
+   - Open MongoDB Compass.
+   - Click on the "Connect" button to connect to your local MongoDB instance. The default connection string is:
+     ```
+     mongodb://localhost:27017
+     ```
+   - Once connected, click on the "Databases" tab.
+   - Click the "Create Database" button.
+   - Enter `application_db` as the database name and provide a collection name (e.g., `temp_collection` can be deleted later). This will create an empty database.
+   - Now, import the BSON files:
+     - Click on the newly created database `application_db`.
+     - Click on the "Collections" tab.
+     - Click the "Add Data" button and select "Import File".
+     - For each collection (e.g., `analyses.bson` and `users.bson`):
+       - Choose "BSON" as the import format.
+       - Select the corresponding `.bson` file.
+       - Click on "Import" to import the data into the respective collection.
 
-5. **Start MongoDB Service:**
-   - Ensure the MongoDB service is running on their local machine. They can start MongoDB using appropriate commands for their operating system (`mongod` or `sudo service mongod start` on Unix-based systems).
+4. **Verify the Restoration:**
+   - In MongoDB Compass, navigate to the `application_db` database and check that the collections (e.g., `analyses`, `users`) are present and the data is correctly imported.
 
-6. **Connect to the Database:**
-   - Modify your application's database connection settings to point to the local MongoDB instance (`localhost:27017` by default).
+### Troubleshooting
+- **MongoDB Not Running:** Make sure MongoDB server (`mongod`) is running on your local machine.
+- **Import Errors:** Ensure you selected the correct import format (BSON) and file for each collection.
 
+### Additional Resources
+- [MongoDB Compass Documentation](https://docs.mongodb.com/compass/current/)
+- [MongoDB Installation Guide](https://docs.mongodb.com/manual/installation/)
+
+If you encounter any issues or need further assistance, please contact limpeh.
