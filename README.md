@@ -12,13 +12,7 @@ To restore a MongoDB database locally from a dump file, you can use the `mongore
    cd your-repo
    ```
 
-3. **Verify the Dump Directory:**
-      - Verify that the directory structure is correct:
-     ```bash
-     ls dump/application_db
-     ```
-   - You should see BSON and metadata files for the collections.
-     
+3. **Verify the Dump Directory:**     
    - Ensure the directory contains the dump files for the `application_db` database. The structure should look something like this:
      ```
      your-repo/
