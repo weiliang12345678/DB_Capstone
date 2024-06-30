@@ -24,7 +24,7 @@ To restore a MongoDB database locally from a dump file, you can use the `mongore
              └── collection2.metadata.json
      ```
 
-5. **Run `mongorestore`:**
+4. **Run `mongorestore`:**
    - Use the `mongorestore` command to restore the database from the dump directory. They should specify the path to the directory containing the dump files.
    ```bash
    mongorestore --db application_db /path/to/dump/application_db
@@ -40,7 +40,7 @@ Select your version and platform.
 Download the ZIP file and extract it.
 Add the extracted directory to your system's PATH environment variable to access the tools from any command prompt.
 
-6. **Verify the Restoration:**
+5. **Verify the Restoration:**
 
 Open MongoDB Compass:
 
