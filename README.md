@@ -3,7 +3,7 @@ To restore a MongoDB database locally from a dump file, you can use the `mongore
 ### Steps to Restore the Database
 
 1. **Install MongoDB:**
-   - Ensure MongoDB is installed on the local machine. Instructions for installation can be found on the [MongoDB installation guide](https://docs.mongodb.com/manual/installation/). Can watch this video from start until 5.45min to see how to install: https://www.youtube.com/watch?v=OiMOQr457Qs
+   - Ensure MongoDB is installed on the local machine. Can download from [MongoDB Community Server Download](https://www.mongodb.com/try/download/community#:~:text=MongoDB%20Community%20Server%20Download). Can watch this video from start until 5.45min to see how to install: https://www.youtube.com/watch?v=OiMOQr457Qs
    
 2. **Clone the Repository:**
    - First, they need to clone the GitHub repository containing the MongoDB dump files.
