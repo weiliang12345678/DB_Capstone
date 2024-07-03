@@ -4,17 +4,14 @@ To restore a MongoDB database locally from a dump file, you can use the `mongore
 
 1. **Install MongoDB:**
    - Ensure MongoDB is installed on the local machine. Can download from [MongoDB Community Server Download](https://www.mongodb.com/try/download/community#:~:text=MongoDB%20Community%20Server%20Download). Make sure to check the install MongoDB Compass option during setup, it should be checked by default. Can watch this video from start until 5.45min to see how to install: https://www.youtube.com/watch?v=OiMOQr457Qs
-   - Need to download MongoDB tools to be able to use mongorestore. If you do not have the MongoDB tools installed, you can download them separately from the MongoDB website. Here’s how you can install the MongoDB tools, including mongorestore:
-For Windows:
-Click on [this](https://fastdl.mongodb.org/tools/db/mongodb-database-tools-windows-x86_64-100.9.5.zip) to download.
-Select your version and platform.
-Download the ZIP file and extract it.
+   - Need to download MongoDB tools to be able to use mongorestore. If you do not have the MongoDB tools installed, you can click on [this](https://fastdl.mongodb.org/tools/db/mongodb-database-tools-windows-x86_64-100.9.5.zip) to download. After downloading the ZIP file, extract it.
 Add the extracted directory to your system's PATH environment variable to access the tools from any command prompt by:
-Open the Start menu, search for "Environment Variables," and select "Edit the system environment variables."
-In the System Properties window, click on the "Environment Variables" button.
-Under the "System variables" section, scroll down and select the "Path" variable, then click "Edit."
-In the Edit Environment Variable dialog, click "New" and add the path to the extracted MongoDB tools directory (e.g., C:\path\to\mongodb-database-tools-windows-x86_64-100.9.5\bin).
-Click "OK" to close all dialog boxes.
+
+1. Open the Start menu, search for "Environment Variables," and select "Edit the system environment variables."
+2. In the System Properties window, click on the "Environment Variables" button.
+3. Under the "System variables" section, scroll down and select the "Path" variable, then click "Edit."
+4. In the Edit Environment Variable dialog, click "New" and add the path to the extracted MongoDB tools directory (e.g., C:\path\to\mongodb-database-tools-windows-x86_64-100.9.5\bin).
+5. Click "OK" to close all dialog boxes.
 
 2. **Clone the Repository:**
    - First, they need to clone the GitHub repository containing the MongoDB dump files.
