@@ -37,10 +37,7 @@ Click "OK" to close all dialog boxes.
    ```bash
    mongorestore --db application_db /path/to/dump/application_db
    ```
-   - Replace `/path/to/dump/application_db` with the actual path to the dump directory. If the current directory is the repository root, the command would be:
-   ```bash
-   mongorestore --db application_db dump/application_db
-   ```
+   - Replace `/path/to/dump/application_db` with the actual path to the dump directory. 
 
 5. **Verify the Restoration:**
 
