@@ -1,4 +1,3 @@
-To restore a MongoDB database locally from a dump file, you can use the `mongorestore` command. Here’s how other people can restore the `application_db` database using the dump files you uploaded to GitHub:
 
 ### Steps to Restore the Database
 
