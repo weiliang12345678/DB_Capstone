@@ -7,11 +7,11 @@ To restore a MongoDB database locally from a dump file, you can use the `mongore
    - Need to download MongoDB tools to be able to use mongorestore. If you do not have the MongoDB tools installed, you can click on [this](https://fastdl.mongodb.org/tools/db/mongodb-database-tools-windows-x86_64-100.9.5.zip) to download. After downloading the ZIP file, extract it.
 Add the extracted directory to your system's PATH environment variable to access the tools from any command prompt by:
 
-1. Open the Start menu, search for "Environment Variables," and select "Edit the system environment variables."
-2. In the System Properties window, click on the "Environment Variables" button.
-3. Under the "System variables" section, scroll down and select the "Path" variable, then click "Edit."
-4. In the Edit Environment Variable dialog, click "New" and add the path to the extracted MongoDB tools directory (e.g., C:\path\to\mongodb-database-tools-windows-x86_64-100.9.5\bin).
-5. Click "OK" to close all dialog boxes.
+Open the Start menu, search for "Environment Variables," and select "Edit the system environment variables."
+In the System Properties window, click on the "Environment Variables" button.
+Under the "System variables" section, scroll down and select the "Path" variable, then click "Edit."
+In the Edit Environment Variable dialog, click "New" and add the path to the extracted MongoDB tools directory (e.g., C:\path\to\mongodb-database-tools-windows-x86_64-100.9.5\bin).
+Click "OK" to close all dialog boxes.
 
 2. **Clone the Repository:**
    - First, they need to clone the GitHub repository containing the MongoDB dump files.
